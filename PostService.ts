@@ -1,4 +1,4 @@
-import BlogPost = require("./posts");
+import BlogPost = require("./Posts");
 import mongoose from "mongoose";
 
 mongoose

@@ -14,11 +14,11 @@ function loggerMiddleware(
 
 server.use(loggerMiddleware);
 
-server.get("/", (req, res) => {
+server.get("/api/posts/", (req, res) => {
   getAllPosts().then(p => res.json(p));
 });
 
-server.get("/:id", (req, res) => {
+server.get("/api/posts/:id", (req, res) => {
   let id = +req.params["id"];
   getPostById(id).then(p => res.json(p));
 });
