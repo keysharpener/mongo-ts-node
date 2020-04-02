@@ -1,7 +1,7 @@
 export interface IBlogPost {
-  name: String;
-  description: String;
+  name: string;
+  description: string;
   publishDate: Date;
-  author: String;
-  postNumber: String;
+  author: string;
+  postNumber: string;
 }
